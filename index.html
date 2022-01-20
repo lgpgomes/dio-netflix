@@ -16,15 +16,39 @@
 </head>
 <body>
     <header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <h2 class="logo">FILMEFLIX</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav>
-        </div>
+
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container d-inline-flex">
+                <h2 class="logo">FILMEFLIX</h2>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="mx-auto"></div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-gray" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-gray" href="#">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-gray" href="#">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-gray" href="#">Mais</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -40,7 +64,7 @@
               <div class="carousel-item active">
                 <img src="img/capa-house.jpg" class="" alt="...">
                 <div class="carousel-caption ">
-                    <h3 class="titulo">HOUSE OF CARDS</h3>
+                    <h3 class="titulo h1">HOUSE OF CARDS</h3>
                     <p class="subtitulo">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
 
                     <div class="botoes">
@@ -59,9 +83,8 @@
               <div class="carousel-item">
                 <img src="img/capa-blinders.jpg" class="" alt="...">
                 <div class="carousel-caption ">
-                    <h3 class="titulo">PEAKY BLINDERS</h3>
+                    <h3 class="titulo h1">PEAKY BLINDERS</h3>
                     <p class="subtitulo">Um gângster familiar ambientado em Birmingham, na Inglaterra, em 1919. A série é centrada numa gangue de criminosos e seu implacável líder, Thomas Shelby.</p>
-
                     <div class="botoes">
                         <button role="button" class="botao">
                             <i class="fas fa-play"></i>
@@ -80,7 +103,7 @@
               <div class="carousel-item">
                 <img src="img/capa-narcos.jpg" class="" alt="...">
                 <div class="carousel-caption ">
-                    <h3 class="titulo">NARCOS</h3>
+                    <h3 class="titulo h1">NARCOS</h3>
                     <p class="subtitulo">A notória série sobre o tráfico é baseada na história real de violência e poder dos cartéis colombianos.</p>
 
                     <div class="botoes">
