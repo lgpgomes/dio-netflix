@@ -12,18 +12,15 @@
         width: 300px;
         font-size: 10px;
     }
+    header .logo {
+        font-size: 24px;
+    }
 }
-
-
 
 @media screen and (max-width:520px){
     .subtitulo {
         font-size: 11px;
     }
-    .titulo {
-        font-size: 13px;
-    }
-
     .botao{
         font-size: 9px;
     }

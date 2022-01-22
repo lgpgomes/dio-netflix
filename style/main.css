@@ -1,38 +1,39 @@
 :root{
-    --amarelo:hsla(48, 92%, 47%, 0.934);
+    --vermelho:hsla(0, 92%, 47%, 0.934);
     --preta:#141414;
 }
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-body{
+body {
    background: var(--preta) !important;
    font-family: 'Arial', Times, serif;
    color:white !important; 
 }
 
-header .logo{
+header .logo {
     margin: 0;
-    color: var(--amarelo) !important;
+    color: var(--vermelho) !important;
     font-family: 'Arial Black', Times;
-    font-size:36px;
+    font-size: 32px;
 }
 
-header nav a{
+header nav a {
     text-decoration:none;
     color:#aaa;
     margin-right: 10px;
 }
 
-header nav a:hover{
+header nav a:hover {
     color:#fff;
 }
 
 .carousel-caption {
-    right: 48% !important;
+    right: 42% !important;
     left: 12% !important;
     text-align: left !important;
     max-width: 720px;
@@ -42,12 +43,19 @@ header nav a:hover{
 
 .carousel-item {
     height: 400px;
+    justify-content: center;
 }
 
-.carousel-item img{
+.carousel-item img {
     min-height: 400px;
     min-width: 720px;
     width: 100vw;
+    object-fit: cover;
+    object-position: 50% 12%;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
 }
 
 .carousel-item:after {
@@ -57,25 +65,16 @@ header nav a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .50),rgb(0, 0, 0, 0.9)100%);
+    background: linear-gradient(rgba(0, 0, 0, .40),rgb(0, 0, 0, 0.9)100%);
     background-size: cover;
-  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10% !important;
+}
   
 .botoes {
     display: flex !important;
-
-}
-.botao {
-    background-color: rgba(0,0,0,.50);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 7px 12px;
-    margin-right: 15px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: .3s ease all;
 }
 
 .botao:hover {
@@ -83,25 +82,60 @@ header nav a:hover{
     color:black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-.box-filme{
-    height: 100%;
-    width: 100%;
-    display: block;
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
     cursor: pointer;
 }
 
+.box-filme, .descricao-filme {
+    border: none;
+    border-radius: 5px;
+}
 
+.descricao-filme {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 12px;
+    visibility: hidden;
+    display: flex;
+    align-items: end;
+    opacity: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0, 95)100%);
+    transition: opacity .3s, visibility .3s;
+    border-bottom: 1.5px solid var(--vermelho);
+}
 
+.item:hover .descricao-filme {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
 
+.offcanvas {
+    background-color: var(--preta) !important;
+}
 
+.navbar-toggler:focus {
+    background-color: rgba(255,255,255,.1) !important;
+    box-shadow: none !important;
+}
 
-
-
-
-
-
-
+.subtitulo { 
+    font-size: 14px;
+}
