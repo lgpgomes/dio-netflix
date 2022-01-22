@@ -6,6 +6,5 @@ Fiz algumas alterações com base no [projeto original](https://github.com/felip
 
 ![captura de tela do projeto](print.gif)!
 
-- Para rodar, baixe o projeto e abra o arquivo index.html.
 
 
