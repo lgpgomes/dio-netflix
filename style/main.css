@@ -18,7 +18,7 @@ body {
 header .logo {
     margin: 0;
     color: var(--vermelho) !important;
-    font-family: 'Arial Black';
+    font-weight: bold;
     font-size: 32px;
 }
 
